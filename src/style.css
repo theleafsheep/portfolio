@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #fef7e5;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-peach {
+  filter: invert(95%) sepia(12%) saturate(628%) hue-rotate(316deg) brightness(105%) contrast(99%);
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #ff9492;
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: #fef7e5;
+}
+
+li a:active {
+  color: #f7eacc;
+}
+
+li a:hover {
+  background-color: #ff7b79;
+}
+
+.nav-links {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+}
+
+.main-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ff8785;
+  font-weight: 600;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle{
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fdad99;
+  font-weight: 100;
+  font-size: 8px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
