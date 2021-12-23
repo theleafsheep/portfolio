@@ -24,7 +24,7 @@ li {
 
 li a {
   display: block;
-  padding: 25px;
+  padding: 35px;
   text-decoration: none;
   color: #fef7e5;
 }
@@ -39,7 +39,7 @@ li a:hover {
 
 .nav-links {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .main-title {
@@ -47,7 +47,7 @@ li a:hover {
   text-transform: uppercase;
   color: #ff8785;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 100px;
   display: flex;
   justify-content: center;
 }
@@ -57,7 +57,7 @@ li a:hover {
   text-transform: uppercase;
   color: #fdad99;
   font-weight: 100;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
