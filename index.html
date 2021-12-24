@@ -16,28 +16,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Lato&family=Montserrat&family=Mukta:wght@300;400;500&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     
 </head>
 
 <body> 
 
-    <ul class = "nav-links">
+    <ul class = "nav-links cl-effect-15">
         <li style="float:left"><a href="#"><div class="icon-peach"><img src="./assets/Animals-Snail-icon.png" alt="Icon" width="22" height="22"/></div></a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact" data-hover="Contact"><span>Contact</span></a></li>
+        <li><a href="#portfolio" data-hover="Portfolio"><span>Portfolio</span></a></li>
+        <li><a href="#about" data-hover="About Me"><span>About Me</span></a></li>
 
     </ul>
 
     <hr style="height:20px;margin-top: 5px;border-width:0;color:#ff9492;background-color:#ff9492">
 
-    <div style="position:relative; top:130px;">
+    <div style="position:relative; top:110px;">
     <div class="main-title">
         Jessica Lam
     </div>
     <div class="subtitle">
         <h1>Designer // Programmer // Game Developer</h1>
+    </div>
+    <div class="center" style="position:relative; top:15px;">
+        <button onclick = "goAbout()" class="button gradient-button gradient-button-1"> Welcome </button>
     </div>
     </div>
     
@@ -45,6 +49,18 @@
         <div class="subtitle">
         </div>
     </div>
-    
+
+    <div class="footer">
+        <img src="./assets/leaves.png" alt="Leaves" width=120px style="float:right"/>
+    </div>
+
+    <div class="footer">
+        <button class="icon" style="float:right;"><a class="bi bi-linkedin" href="https://www.linkedin.com/in/jhlam" target="_blank" style="font-size: 4rem; color: #ff9492;"></a></button>
+        <button class="icon" style="float:right;"><a class="bi bi-instagram" href="https://www.instagram.com/riifushi" target="_blank" style="font-size: 4rem; color: #ff9492;"></a></button>
+        <button onclick="copyToClipboard()" class="icon" style="float:right;"><a class="bi bi-envelope-fill" style="font-size: 4.3rem; color: #ff9492;"></a></button>
+    </div>
+
+    <script src="index.js"></script>
+
 </body>
 </html>

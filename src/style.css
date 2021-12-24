@@ -10,6 +10,19 @@ body{
   filter: invert(95%) sepia(12%) saturate(628%) hue-rotate(316deg) brightness(105%) contrast(99%);
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icon {
+  margin: 20px 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -29,17 +42,10 @@ li a {
   color: #fef7e5;
 }
 
-li a:active {
-  color: #f7eacc;
-}
-
-li a:hover {
-  background-color: #ff7b79;
-}
-
 .nav-links {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 22px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .main-title {
@@ -52,7 +58,7 @@ li a:hover {
   justify-content: center;
 }
 
-.subtitle{
+.subtitle {
   font-family: 'IBM Plex Sans', sans-serif;
   text-transform: uppercase;
   color: #fdad99;
@@ -64,3 +70,69 @@ li a:hover {
   display: flex;
   justify-content: center;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-family : 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  border: none;
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 40px;
+}
+
+/* START Gradient Button from html-online.com/articles/gradient-background-buttons-css-html/ */
+.gradient-button {
+  letter-spacing: px;
+  margin: 2px;
+  font-size: 20px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 40px;
+}
+.gradient-button:hover{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  margin: 0px;
+}
+.gradient-button-1 {background-image: linear-gradient(135deg, #2BC0E4 0%, #8ad0ff 51%, #2BC0E4 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+/* END Gradient Button */
+
+/* START Link Effects from https://tympanus.net/codrops/2013/08/06/creative-link-effects/ */
+.cl-effect-15 a {
+	color: rgba(65, 39, 39, 0.2);
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.cl-effect-15 a::before {
+	color: #fef7e5;
+	content: attr(data-hover);
+	position: absolute;
+	transition: transform 1s, opacity 0.4s;
+}
+
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+/* END Link Effects */
