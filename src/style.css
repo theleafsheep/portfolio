@@ -48,6 +48,12 @@ li a {
   font-size: 20px;
 }
 
+.mid-text {
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
 .main-title {
   font-family: 'IBM Plex Sans', sans-serif;
   text-transform: uppercase;
@@ -69,6 +75,21 @@ li a {
   white-space: nowrap;
   display: flex;
   justify-content: center;
+}
+
+.small-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #ff9492;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.hide {
+  display:none;
+}
+
+.show{
+  display:block;
 }
 
 .center {
